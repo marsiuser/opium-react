@@ -9,6 +9,7 @@ import Error404 from "./Components/Error404/Error404";
 import BlogPage from "./Components/BlogPage/BlogPage";
 import TestPage from "./Components/TestPage/TestPage";
 import Contacts from "./Components/Contacts/Сontacts";
+import AboutPage from "./Components/AboutPage/AboutPage";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/mainpage" component={MainPage} exact />
         <Route path="/blog-test" component={TestPage} exact />
         <Route path="/contacts" component={Contacts} exact />
+        <Route path="/about" component={AboutPage} exact />
       </div>
     </Router>
   );

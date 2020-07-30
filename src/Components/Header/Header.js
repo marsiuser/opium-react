@@ -33,11 +33,20 @@ export default class Header extends Component{
                         </div>
                             <input id="burger" type="checkbox" />
                             <label htmlFor="burger">
-                                <span></span>
-                                <span></span>
-                                <span></span>
+                                <div class="menu__wrapper">
+                                    <div class="menu__item--bento" tabindex="3">
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                        <div class="box"></div>
+                                    </div>
+                                </div>
                             </label>
-
                             <nav>    
                             <div className="header-mob-open">
                                 <ul>
