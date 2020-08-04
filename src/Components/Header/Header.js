@@ -1,8 +1,20 @@
 import React, { Component } from "react";
+import $ from "jquery"
 import "./header.css";
 import headerLogo from "./img/header-logo.png";
 import headerLogosvg from "./img/header-logo.svg";
 export default class Header extends Component{
+    componentDidMount(){
+        // $(".list-item").on("click", function(e) {
+        //     e.preventDefault();
+        //     $(".list-item").addClass("list-item-active");
+        // });
+        $(".list-item").click(function() {
+            $(".list-item").removeClass("list-item-active");
+            $(this).addClass("list-item-active");
+        });
+    }
+    
     render(){
         return(
             <div> 
@@ -11,7 +23,7 @@ export default class Header extends Component{
                         <div className="header-wrapper header-desktop">
                             <div className="header-left">
                                 <ul className="header_list">
-                                    <li><a className="list-item" href="#">UX/UI Design</a></li>
+                                    <li><a className="list-item list-item-active" href="#">UX/UI Design</a></li>
                                     <li><a className="list-item" href="#">Usability Testing</a></li>
                                     <li><a className="list-item" href="#">Blog</a></li>
                                 </ul>
