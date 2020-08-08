@@ -10,6 +10,7 @@ import YouTube from "./img/Vector.svg";
 import Instagram from "./img/Instagram.svg";
 import Medium from "./img/Medium.svg";
 import Habr from "./img/Habr.svg";
+import {Link} from "react-router-dom";
 
 export default class Footer extends Component{
     render(){
@@ -19,14 +20,14 @@ export default class Footer extends Component{
                         <nav className="footer-wrapper">
                         <div className="footer-left">
                             <ul className="footer_content">
-                                <li className="footer_content-link"><a href="#">Main</a></li>
-                                <li className="footer_content-link"><a href="#">About us</a></li>
-                                <li className="footer_content-link"><a href="#">Contacts</a></li>
+                                <li className="footer_content-link"><Link to="/mainpage">Main</Link></li>
+                                <li className="footer_content-link"><Link to="/about">About us</Link></li>
+                                <li className="footer_content-link"><Link to="/contacts">Contacts</Link></li>
                             </ul>
                             <ul className="footer_content">
-                                <li className="footer_content-link"><a href="#">UX/UI Design</a></li>
-                                <li className="footer_content-link"><a href="#">Usability Testing</a></li>
-                                <li className="footer_content-link"><a href="#">Blog</a></li>
+                                <li className="footer_content-link"><Link to="/">UX/UI Design</Link></li>
+                                <li className="footer_content-link"><Link to="/find">Usability Testing</Link></li>
+                                <li className="footer_content-link"><Link to="/blog">Blog</Link></li>
                             </ul>
                         </div>
                         <div className="footer-right">
@@ -57,8 +58,7 @@ export default class Footer extends Component{
                                 <li className="footer_content-title">Follow us</li>
                                 <li className="footer_content-link fw">
                                     <img src={Behance} className="footer_content-logo" alt="no-logo"/>
-
-                                    <a href="#">Behance</a>
+<a href="#">Behance</a>
                                 </li>
                                 <li className="footer_content-link fw">
                                     <img src={YouTube} className="footer_content-logo" alt="no-logo"/>                                                            
@@ -79,7 +79,7 @@ export default class Footer extends Component{
                             </ul>
                         </div>
                     </nav>
-                    <p className="footer_quote">© Every time you brake copyright rules, <span> Hitler becomes more alive</span></p>
+                    <p className="footer_quote">:copyright: Every time you brake copyright rules, <span> Hitler becomes more alive</span></p>
                 </div>
             </footer>
         )
