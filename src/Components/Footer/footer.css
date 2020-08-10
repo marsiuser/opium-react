@@ -57,7 +57,7 @@ footer{
 
 .footer_content-logo{
     padding-right: 10px;
-    transform: translateY(8px);
+    transform: translateY(-4px);
     width: 35px !important;
     height: 35px !important;
     /* padding-bottom: 25px; */
@@ -155,5 +155,8 @@ footer{
     .footer_content-link a,
     .footer_quote{
         font-size: 14px;
+    }
+    .footer_quote{
+        max-width: 230px;
     }
 }

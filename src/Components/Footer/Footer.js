@@ -79,7 +79,7 @@ export default class Footer extends Component{
                             </ul>
                         </div>
                     </nav>
-                    <p className="footer_quote">:copyright: Every time you brake copyright rules, <span> Hitler becomes more alive</span></p>
+                    <p className="footer_quote">© Every time you break copyright rules, Hitler becomes more alive</p>
                 </div>
             </footer>
         )
